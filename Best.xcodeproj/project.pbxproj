@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B02C4E5160E16FF007FFA75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B02C4E4160E16FF007FFA75 /* UIKit.framework */; };
+		0B02C4E7160E16FF007FFA75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B02C4E6160E16FF007FFA75 /* Foundation.framework */; };
+		0B02C4E9160E16FF007FFA75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B02C4E8160E16FF007FFA75 /* CoreGraphics.framework */; };
+		0B02C4EF160E16FF007FFA75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B02C4ED160E16FF007FFA75 /* InfoPlist.strings */; };
+		0B02C4F1160E16FF007FFA75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B02C4F0160E16FF007FFA75 /* main.m */; };
+		0B02C4F5160E16FF007FFA75 /* YUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B02C4F4160E16FF007FFA75 /* YUAppDelegate.m */; };
+		0B02C4F7160E16FF007FFA75 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B02C4F6160E16FF007FFA75 /* Default.png */; };
+		0B02C4F9160E16FF007FFA75 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B02C4F8160E16FF007FFA75 /* Default@2x.png */; };
+		0B02C4FB160E16FF007FFA75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B02C4FA160E16FF007FFA75 /* Default-568h@2x.png */; };
+		0B02C4FE160E16FF007FFA75 /* YUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B02C4FD160E16FF007FFA75 /* YUViewController.m */; };
+		0B02C501160E16FF007FFA75 /* YUViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B02C4FF160E16FF007FFA75 /* YUViewController.xib */; };
+		0B02C50C160E18F6007FFA75 /* YUTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B02C50A160E18F6007FFA75 /* YUTableViewController.m */; };
+		0B02C50D160E18F6007FFA75 /* YUTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B02C50B160E18F6007FFA75 /* YUTableViewController.xib */; };
+		0B02C511160EEFFB007FFA75 /* YULocateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B02C50F160EEFFB007FFA75 /* YULocateViewController.m */; };
+		0B02C512160EEFFB007FFA75 /* YULocateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B02C510160EEFFB007FFA75 /* YULocateViewController.xib */; };
+		0B02C514160EF218007FFA75 /* Provineces.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B02C513160EF218007FFA75 /* Provineces.plist */; };
+		0BF9683C160FFFED00FC91F0 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9683B160FFFED00FC91F0 /* GDataXMLNode.m */; };
+		0BF9683F1610021200FC91F0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF9683E1610021200FC91F0 /* libxml2.dylib */; };
+		0BF96842161006D400FC91F0 /* YUXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF96841161006D400FC91F0 /* YUXML.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B02C4E0160E16FF007FFA75 /* Best.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Best.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B02C4E4160E16FF007FFA75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0B02C4E6160E16FF007FFA75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0B02C4E8160E16FF007FFA75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0B02C4EC160E16FF007FFA75 /* Best-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Best-Info.plist"; sourceTree = "<group>"; };
+		0B02C4EE160E16FF007FFA75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B02C4F0160E16FF007FFA75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0B02C4F2160E16FF007FFA75 /* Best-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Best-Prefix.pch"; sourceTree = "<group>"; };
+		0B02C4F3160E16FF007FFA75 /* YUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YUAppDelegate.h; sourceTree = "<group>"; };
+		0B02C4F4160E16FF007FFA75 /* YUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YUAppDelegate.m; sourceTree = "<group>"; };
+		0B02C4F6160E16FF007FFA75 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0B02C4F8160E16FF007FFA75 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0B02C4FA160E16FF007FFA75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0B02C4FC160E16FF007FFA75 /* YUViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YUViewController.h; sourceTree = "<group>"; };
+		0B02C4FD160E16FF007FFA75 /* YUViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YUViewController.m; sourceTree = "<group>"; };
+		0B02C500160E16FF007FFA75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/YUViewController.xib; sourceTree = "<group>"; };
+		0B02C507160E17D1007FFA75 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0B02C509160E18F6007FFA75 /* YUTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUTableViewController.h; sourceTree = "<group>"; };
+		0B02C50A160E18F6007FFA75 /* YUTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUTableViewController.m; sourceTree = "<group>"; };
+		0B02C50B160E18F6007FFA75 /* YUTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YUTableViewController.xib; sourceTree = "<group>"; };
+		0B02C50E160EEFFB007FFA75 /* YULocateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YULocateViewController.h; sourceTree = "<group>"; };
+		0B02C50F160EEFFB007FFA75 /* YULocateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YULocateViewController.m; sourceTree = "<group>"; };
+		0B02C510160EEFFB007FFA75 /* YULocateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YULocateViewController.xib; sourceTree = "<group>"; };
+		0B02C513160EF218007FFA75 /* Provineces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Provineces.plist; sourceTree = "<group>"; };
+		0BF9683A160FFFED00FC91F0 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		0BF9683B160FFFED00FC91F0 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		0BF9683E1610021200FC91F0 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		0BF96840161006D400FC91F0 /* YUXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YUXML.h; path = YUXML/YUXML.h; sourceTree = "<group>"; };
+		0BF96841161006D400FC91F0 /* YUXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YUXML.m; path = YUXML/YUXML.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B02C4DD160E16FF007FFA75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BF9683F1610021200FC91F0 /* libxml2.dylib in Frameworks */,
+				0B02C4E5160E16FF007FFA75 /* UIKit.framework in Frameworks */,
+				0B02C4E7160E16FF007FFA75 /* Foundation.framework in Frameworks */,
+				0B02C4E9160E16FF007FFA75 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B02C4D5160E16FF007FFA75 = {
+			isa = PBXGroup;
+			children = (
+				0BF9683E1610021200FC91F0 /* libxml2.dylib */,
+				0B02C507160E17D1007FFA75 /* Default.png */,
+				0B02C4EA160E16FF007FFA75 /* Best */,
+				0B02C4E3160E16FF007FFA75 /* Frameworks */,
+				0B02C4E1160E16FF007FFA75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B02C4E1160E16FF007FFA75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B02C4E0160E16FF007FFA75 /* Best.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B02C4E3160E16FF007FFA75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B02C4E4160E16FF007FFA75 /* UIKit.framework */,
+				0B02C4E6160E16FF007FFA75 /* Foundation.framework */,
+				0B02C4E8160E16FF007FFA75 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0B02C4EA160E16FF007FFA75 /* Best */ = {
+			isa = PBXGroup;
+			children = (
+				0BF96839160FFFED00FC91F0 /* GDataXMLNode */,
+				0B02C4F3160E16FF007FFA75 /* YUAppDelegate.h */,
+				0B02C4F4160E16FF007FFA75 /* YUAppDelegate.m */,
+				0B02C509160E18F6007FFA75 /* YUTableViewController.h */,
+				0B02C50A160E18F6007FFA75 /* YUTableViewController.m */,
+				0B02C50B160E18F6007FFA75 /* YUTableViewController.xib */,
+				0B02C4FC160E16FF007FFA75 /* YUViewController.h */,
+				0B02C4FD160E16FF007FFA75 /* YUViewController.m */,
+				0B02C4FF160E16FF007FFA75 /* YUViewController.xib */,
+				0B02C50E160EEFFB007FFA75 /* YULocateViewController.h */,
+				0B02C50F160EEFFB007FFA75 /* YULocateViewController.m */,
+				0B02C510160EEFFB007FFA75 /* YULocateViewController.xib */,
+				0B02C4EB160E16FF007FFA75 /* Supporting Files */,
+				0BF96840161006D400FC91F0 /* YUXML.h */,
+				0BF96841161006D400FC91F0 /* YUXML.m */,
+			);
+			path = Best;
+			sourceTree = "<group>";
+		};
+		0B02C4EB160E16FF007FFA75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B02C513160EF218007FFA75 /* Provineces.plist */,
+				0B02C4EC160E16FF007FFA75 /* Best-Info.plist */,
+				0B02C4ED160E16FF007FFA75 /* InfoPlist.strings */,
+				0B02C4F0160E16FF007FFA75 /* main.m */,
+				0B02C4F2160E16FF007FFA75 /* Best-Prefix.pch */,
+				0B02C4F6160E16FF007FFA75 /* Default.png */,
+				0B02C4F8160E16FF007FFA75 /* Default@2x.png */,
+				0B02C4FA160E16FF007FFA75 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BF96839160FFFED00FC91F0 /* GDataXMLNode */ = {
+			isa = PBXGroup;
+			children = (
+				0BF9683A160FFFED00FC91F0 /* GDataXMLNode.h */,
+				0BF9683B160FFFED00FC91F0 /* GDataXMLNode.m */,
+			);
+			path = GDataXMLNode;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B02C4DF160E16FF007FFA75 /* Best */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B02C504160E16FF007FFA75 /* Build configuration list for PBXNativeTarget "Best" */;
+			buildPhases = (
+				0B02C4DC160E16FF007FFA75 /* Sources */,
+				0B02C4DD160E16FF007FFA75 /* Frameworks */,
+				0B02C4DE160E16FF007FFA75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Best;
+			productName = Best;
+			productReference = 0B02C4E0160E16FF007FFA75 /* Best.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B02C4D7160E16FF007FFA75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YU;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "於 琦峰";
+			};
+			buildConfigurationList = 0B02C4DA160E16FF007FFA75 /* Build configuration list for PBXProject "Best" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0B02C4D5160E16FF007FFA75;
+			productRefGroup = 0B02C4E1160E16FF007FFA75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B02C4DF160E16FF007FFA75 /* Best */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B02C4DE160E16FF007FFA75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B02C4EF160E16FF007FFA75 /* InfoPlist.strings in Resources */,
+				0B02C4F7160E16FF007FFA75 /* Default.png in Resources */,
+				0B02C4F9160E16FF007FFA75 /* Default@2x.png in Resources */,
+				0B02C4FB160E16FF007FFA75 /* Default-568h@2x.png in Resources */,
+				0B02C501160E16FF007FFA75 /* YUViewController.xib in Resources */,
+				0B02C50D160E18F6007FFA75 /* YUTableViewController.xib in Resources */,
+				0B02C512160EEFFB007FFA75 /* YULocateViewController.xib in Resources */,
+				0B02C514160EF218007FFA75 /* Provineces.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B02C4DC160E16FF007FFA75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B02C4F1160E16FF007FFA75 /* main.m in Sources */,
+				0B02C4F5160E16FF007FFA75 /* YUAppDelegate.m in Sources */,
+				0B02C4FE160E16FF007FFA75 /* YUViewController.m in Sources */,
+				0B02C50C160E18F6007FFA75 /* YUTableViewController.m in Sources */,
+				0B02C511160EEFFB007FFA75 /* YULocateViewController.m in Sources */,
+				0BF9683C160FFFED00FC91F0 /* GDataXMLNode.m in Sources */,
+				0BF96842161006D400FC91F0 /* YUXML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0B02C4ED160E16FF007FFA75 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B02C4EE160E16FF007FFA75 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0B02C4FF160E16FF007FFA75 /* YUViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B02C500160E16FF007FFA75 /* en */,
+			);
+			name = YUViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B02C502160E16FF007FFA75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0B02C503160E16FF007FFA75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B02C505160E16FF007FFA75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Best/Best-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "Best/Best-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0B02C506160E16FF007FFA75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Best/Best-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "Best/Best-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B02C4DA160E16FF007FFA75 /* Build configuration list for PBXProject "Best" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B02C502160E16FF007FFA75 /* Debug */,
+				0B02C503160E16FF007FFA75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B02C504160E16FF007FFA75 /* Build configuration list for PBXNativeTarget "Best" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B02C505160E16FF007FFA75 /* Debug */,
+				0B02C506160E16FF007FFA75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B02C4D7160E16FF007FFA75 /* Project object */;
+}
