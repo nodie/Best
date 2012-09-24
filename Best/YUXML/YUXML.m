@@ -35,6 +35,8 @@
     nodes = [doc.rootElement children];
     
     
+    NSMutableArray *location = [[[NSMutableArray alloc] initWithCapacity:10] autorelease];
+    
     for (GDataXMLNode *node in nodes) {
         //NSLog(@"node=%@ %@", node.name, node.XMLString);
 
@@ -43,8 +45,27 @@
         //NSLog(@"node2=%@ %@", nodes2.objectEnumerator, node.stringValue);
         
         
-        NSLog(@"node=%@ %@", [[nodes2 objectAtIndex:0] stringValue], [[nodes2 objectAtIndex:1] stringValue]);
+        //NSLog(@"node=%@ %@", [[nodes2 objectAtIndex:0] stringValue], [[nodes2 objectAtIndex:1] stringValue]);
+        
+        NSMutableDictionary *dir=[[NSMutableDictionary alloc] initWithCapacity:1];
+        [dir setObject:[[[nodes2 objectAtIndex:0] stringValue] substringToIndex:2] forKey:@"ci"];
+        [dir setObject:[[[nodes2 objectAtIndex:0] stringValue] substringFromIndex:2] forKey:@"en"];
+        [dir setObject:[[nodes2 objectAtIndex:1] stringValue] forKey:@"cn"];
+        [location addObject:dir];
+        [dir release];
     }
+    
+    NSSortDescriptor *_sorter  = [[NSSortDescriptor alloc] initWithKey:@"en" ascending:YES];
+    //NSLog(@"根据name排序:\n%@",[location sortedArrayUsingDescriptors:[NSArray arrayWithObjects:_sorter, nil]]);
+    NSArray *sortLocation = [location sortedArrayUsingDescriptors:[NSArray arrayWithObjects:_sorter, nil]];
+    
+    //[location sortedArrayUsingSelector:@selector(localizedCompare:)];
+    for (int i=0; i<[sortLocation count]; i++) {
+        NSLog(@"%@%@ %@", [[sortLocation objectAtIndex:i] objectForKey:@"ci"]
+              , [[sortLocation objectAtIndex:i] objectForKey:@"en"]
+              , [[sortLocation objectAtIndex:i] objectForKey:@"cn"]);
+    }
+    [_sorter release];
 }
 
 @end
